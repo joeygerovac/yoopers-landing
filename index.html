@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yoopers for Trump — Coming Soon</title>
+<meta name="description" content="Made in da U.P. for Yoopers who stand with Trump. Hats, hoodies, flags, stickers — launching summer 2026. Sign up for early access.">
+<meta property="og:title" content="Yoopers for Trump">
+<meta property="og:description" content="Yooper-made merch for the U.P. faithful. Launching soon.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yoopersfortrump.com">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230c1a2b'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='52' font-weight='900' text-anchor='middle' fill='%23bf1b27'%3EY%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --navy:#0c1a2b;
+    --navy-2:#142539;
+    --red:#bf1b27;
+    --gold:#d4a83a;
+    --snow:#f3f1ea;
+    --snow-2:#dcd9cf;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--navy);color:var(--snow);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.55;min-height:100%}
+  body{display:flex;flex-direction:column;min-height:100vh}
+  .container{max-width:1100px;margin:0 auto;padding:0 24px;width:100%}
+  /* Top nav */
+  nav{padding:24px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+  nav .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+  .nav-brand{font-family:Georgia,serif;font-weight:900;font-size:22px;letter-spacing:-.5px}
+  .nav-brand .red{color:var(--red)}
+  .nav-brand .gold{color:var(--gold)}
+  .nav-meta{font-size:12px;color:var(--snow-2);text-transform:uppercase;letter-spacing:1.5px}
+  /* Hero */
+  .hero{flex:1;padding:80px 0 100px;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0 24px,rgba(255,255,255,.012) 24px 48px);pointer-events:none}
+  .hero .container{position:relative}
+  .eyebrow{display:inline-block;background:var(--red);color:#fff;padding:6px 14px;border-radius:24px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+  .brand{font-family:Georgia,serif;font-weight:900;font-size:88px;letter-spacing:-2px;line-height:.95;margin-top:20px}
+  .brand .red{color:var(--red)}
+  .brand .gold{color:var(--gold)}
+  .lede{margin-top:24px;font-size:22px;color:var(--snow-2);max-width:680px;line-height:1.4}
+  .lede strong{color:var(--snow)}
+  /* Email signup */
+  .signup{margin-top:40px;background:var(--navy-2);border:1px solid rgba(255,255,255,.1);border-left:4px solid var(--red);padding:28px;border-radius:8px;max-width:560px}
+  .signup-label{font-family:Georgia,serif;font-weight:800;font-size:20px;color:var(--gold)}
+  .signup-sub{font-size:14px;color:var(--snow-2);margin-top:6px}
+  .signup form{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap}
+  .signup input[type=email]{flex:1;min-width:220px;padding:13px 14px;background:var(--navy);color:var(--snow);border:1px solid rgba(255,255,255,.18);border-radius:6px;font-size:15px;font-family:inherit}
+  .signup input[type=email]::placeholder{color:rgba(243,241,234,.5)}
+  .signup button{background:var(--red);color:#fff;border:none;padding:13px 24px;border-radius:6px;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:1px;cursor:pointer;font-family:inherit;transition:background .15s}
+  .signup button:hover{background:#8a131d}
+  .signup-fineprint{margin-top:14px;font-size:11px;color:rgba(243,241,234,.4);line-height:1.4}
+  /* Sneak peek */
+  .peek{padding:80px 0;background:#08111d;border-top:1px solid rgba(255,255,255,.06)}
+  .section-label{color:var(--red);font-weight:800;font-size:13px;letter-spacing:2px;text-transform:uppercase}
+  .section-h{font-family:Georgia,serif;font-weight:900;font-size:38px;line-height:1.1;margin-top:8px}
+  .section-p{color:var(--snow-2);font-size:17px;max-width:680px;margin-top:12px}
+  .peek-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:36px}
+  .peek-card{background:var(--navy-2);border:1px solid rgba(255,255,255,.08);padding:24px 22px;border-radius:8px;border-top:3px solid var(--red)}
+  .peek-card h4{font-family:Georgia,serif;font-size:18px;font-weight:800;margin-bottom:8px}
+  .peek-card .pcat{font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:1.5px;font-weight:700;margin-bottom:6px}
+  .peek-card p{color:var(--snow-2);font-size:14px;font-style:italic}
+  /* Pillars */
+  .pillars{padding:80px 0}
+  .pillar-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:36px}
+  .pillar{padding:8px 0}
+  .pillar-icon{font-size:32px;margin-bottom:10px}
+  .pillar h4{font-family:Georgia,serif;font-size:18px;font-weight:800;margin-bottom:6px}
+  .pillar p{color:var(--snow-2);font-size:14px}
+  /* Footer */
+  footer{padding:36px 0;background:#06101a;border-top:1px solid rgba(255,255,255,.06);font-size:13px;color:rgba(243,241,234,.5);text-align:center}
+  footer .biz{color:var(--snow-2);font-weight:700}
+  footer .disclaimer{margin-top:10px;font-size:11px;line-height:1.5;max-width:680px;margin-left:auto;margin-right:auto}
+  @media (max-width:640px){
+    .brand{font-size:56px;letter-spacing:-1px}
+    .lede{font-size:18px}
+    .section-h{font-size:28px}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-brand">YOOPERS <span class="red">for</span> <span class="gold">TRUMP</span></div>
+    <div class="nav-meta">Launching Summer 2026</div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">Coming Soon</span>
+    <h1 class="brand">Made in <span class="gold">da U.P.</span><br>For <span class="red">Yoopers</span><br>Who Stand With <span class="red">Trump</span>.</h1>
+    <p class="lede">Hats, hoodies, flags, stickers, koozies — built for the deer-camp, the sled, the Lake Superior shoreline, the front porch in Marquette. <strong>Heavy on Yooper. Loud on patriotism.</strong> Drops this summer.</p>
+
+    <div class="signup">
+      <div class="signup-label">Be first to know.</div>
+      <div class="signup-sub">Early subscribers get 15% off launch day + first dibs on the limited "U.P. Edition" flag.</div>
+      <!-- ============================================================
+           IMPORTANT: replace [FORMSPREE_ID] below with your real form ID
+           Get one free at https://formspree.io/forms (10 sub/mo free).
+           Or swap the entire <form> for a Mailchimp / ConvertKit embed.
+           ============================================================ -->
+      <form action="https://formspree.io/f/[FORMSPREE_ID]" method="POST">
+        <input type="email" name="email" placeholder="your@email.com" required>
+        <input type="hidden" name="_subject" value="New Yoopers for Trump signup">
+        <button type="submit">Notify Me</button>
+      </form>
+      <div class="signup-fineprint">By subscribing you agree to receive marketing emails from Yoopers for Trump (a 906 Digital LLC brand). Unsubscribe anytime.</div>
+    </div>
+  </div>
+</section>
+
+<section class="peek">
+  <div class="container">
+    <div class="section-label">Sneak Peek</div>
+    <h2 class="section-h">Da launch line</h2>
+    <p class="section-p">25 SKUs at drop. Every design built around what Yoopers actually wear and display — not generic political merch.</p>
+
+    <div class="peek-grid">
+      <div class="peek-card">
+        <div class="pcat">Apparel</div>
+        <h4>Yoopers for Trump Tee</h4>
+        <p>Heavy-cotton, navy, eagle-and-pines lockup over a U.P. silhouette. Da flagship.</p>
+      </div>
+      <div class="peek-card">
+        <div class="pcat">Apparel</div>
+        <h4>Frozen Tundra Patriot Hoodie</h4>
+        <p>11oz fleece. Big back graphic. Snowmobile-season armor.</p>
+      </div>
+      <div class="peek-card">
+        <div class="pcat">Headwear</div>
+        <h4>Yooper MAGA Cap</h4>
+        <p>Embroidered red 6-panel. The one every Yooper Trumper will own.</p>
+      </div>
+      <div class="peek-card">
+        <div class="pcat">Flag</div>
+        <h4>Trump 2028 — U.P. Edition Flag</h4>
+        <p>3x5 polyester. Built for truck beds and front porches.</p>
+      </div>
+      <div class="peek-card">
+        <div class="pcat">Sticker</div>
+        <h4>Yoopers for 47 Bumper</h4>
+        <p>UP-shaped die-cut. Truck-bed candy. $6.95.</p>
+      </div>
+      <div class="peek-card">
+        <div class="pcat">Drinkware</div>
+        <h4>Trump Camp Koozie</h4>
+        <p>Camo neoprene. Buck silhouette. Cooler-staple.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pillars">
+  <div class="container">
+    <div class="section-label">Why This Brand</div>
+    <h2 class="section-h">Three things you won't find at the Trump Store</h2>
+    <div class="pillar-grid">
+      <div class="pillar">
+        <div class="pillar-icon" aria-hidden="true">🛡️</div>
+        <h4>Yooper-first design</h4>
+        <p>Sisu, deer camp, snowmobiling, Lake Superior, pasties. Regional identity is the point.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon" aria-hidden="true">🇺🇸</div>
+        <h4>Print-on-demand here in the U.S.</h4>
+        <p>Printed and shipped from American facilities. No overseas drop-ship.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon" aria-hidden="true">⚡</div>
+        <h4>Fast support, plain English</h4>
+        <p>Email gets answered same day by a real person. None of dat AI-bot nonsense.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div><span class="biz">906 Digital LLC</span> · yoopersfortrump.com</div>
+    <div class="disclaimer">Not affiliated with, endorsed by, or sponsored by Donald J. Trump, Donald J. Trump for President, Inc., DTTM Operations LLC, or any other Trump-related entity or campaign committee. All political expression is the brand's own and constitutes protected speech. © 2026 906 Digital LLC.</div>
+  </div>
+</footer>
+
+</body>
+</html>
